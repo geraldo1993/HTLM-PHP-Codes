@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GERALDO BRAHO</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<link rel="stylesheet" href="style.css">
+	<body>
+		<div id="container">
+			<div id="sub-container">
+				<div id="header">
+					<!--division for the container-->
+					<a href=""><img src="logo.png" height="250">
+					<img id="logo" src="naulogo.png" height="220"></a>
+
+				</div>
+				<div>
+				    <ul style="padding-left: 120px";><br>
+				        <li><a href="Project.html"> HOME </a></li>
+				        <li><a href="soccer.html"> SOCCER </a></li>
+				        <li><a href="Basketball.html"> BASKETBALL </a></li>
+				        <li><a href="Volleyball.html"> VOLLEYBALL </a></li>
+				        <li><a href="form.html"> SIGN UP FORM </a></li>
+				        <li><a href="http://www.na.edu/campus-life/nau-athletics/"> ABOUT US </a></li>
+				        <li><a href="http://www.na.edu/"> NAU </a></li>
+					  </ul>
+				 </div>	
+
+				<div>
+					<!-- division for the main image-->
+					<img src="mainbasketballslide.jpg" name="slide" width="1024"height="350">
+				<script type="text/javascript">
+
+                var image1=new Image()
+                image1.src="bump.jpg"
+                var image2=new Image()
+                image2.src="mvpdoucet.jpg"
+                var image3=new Image()
+                image3.src="mainvolleyballslide.jpg"
+
+                </script>
+
+                <script type="text/javascript">
+			
+				var step=1
+				function slideit(){
+				document.images.slide.src=eval("image"+ step +".src")
+				if(step<3)
+					step++
+				else
+					step=1
+					setTimeout("slideit()",2500)
+				}
+				slideit()
+				</script>
+							
+				</div>		
+				
+				
+				<div id="main">
+
+					<div id="sidebar">
+		    			<img src="volleyschedule.jpg" width="341" height=""/>			 
+					</div>
+
+					<h1>VOLLEYBALL NEWS</h1>
+						<div id="content">SEASON COMES TO AN END FOR OUR LADY STALLIONS<br></div>
+						<br><center><img src="storyvolley.jpg" width="" height=""></center>
+						<div id="info"><p><br>In the 2014-2015 Volleyball season, the Lady Stallions competed in the Houston Sports Club Conference. Playing against Univeristy of Houston, U of H Downtown, Lone Star College, and other colleges and helping to put the name of NAU out to other campuses. <br><br>With some of that it has been bringing interest to those who are interested to play for NAU and some have already planned to enroll for Fall 2015. Things are looking promising for this team and the future is becoming the present.
+                        </p></div>
+						 <br><img src="volleyroster.jpg" height="" width="">
+
+						<div><a href="http://www.na.edu/" target=_blank><img id="visit" src="visit.jpg"></a></div>
+				</div>
+
+				
+				<div id="footer">
+					<!-- division for the bottom footer-->
+					<div>
+						
+								<img id="nike" src="nike.png" width="220">
+								<img id="nau"  src="nau.png" width="160">
+								<img id="adidas" src="adidas.png" width="250">
+							
+					</div>
+				</div>
+				<div id="below_footer">
+					<!-- division for the bottom below the footer-->
+					<div id="copy"> <center>Copyright 2015| All Rights Reserved | North American University </center></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

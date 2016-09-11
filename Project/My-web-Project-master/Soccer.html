@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GERALDO BRAHO</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<link rel="stylesheet" href="style.css">
+	<body>
+		<div id="container">
+			<div id="sub-container">
+				<div id="header">
+					<!--division for the container-->
+					<a href=""><img src="logo.png" height="250">
+					<img id="logo" src="naulogo.png" height="220"></a>
+                  
+				</div>
+				<div>
+				    <ul style="padding-left: 120px";><br>
+				        <li><a href="Project.html"> HOME </a></li>
+				        <li><a href="Soccer.html"> SOCCER </a></li>
+				        <li><a href="Basketball.html"> BASKETBALL </a></li>
+				        <li><a href="Volleyball.html"> VOLLEYBALL </a></li>
+				        <li><a href="form.html"> SIGN UP FORM </a></li>
+				        <li><a href="http://www.na.edu/campus-life/nau-athletics/"> ABOUT US </a></li>
+				        <li><a href="http://www.na.edu/"> NAU </a></li>
+					  </ul>
+				 </div>	
+
+				<div>
+					<!-- division for the main image-->
+					<img src="mainbasketballslide.jpg" name="slide" width="1024"height="350">
+				<script type="text/javascript">
+
+                var image1=new Image()
+                image1.src="MVP.jpg"
+                var image2=new Image()
+                image2.src="nothing.jpg"
+                var image3=new Image()
+                image3.src="mainsoccerslide.jpg"
+
+                </script>
+
+                <script type="text/javascript">
+			
+				var step=1
+				function slideit(){
+				document.images.slide.src=eval("image"+ step +".src")
+				if(step<3)
+					step++
+				else
+					step=1
+					setTimeout("slideit()",2500)
+				}
+				slideit()
+				</script>
+							
+				</div>		
+				
+				
+				<div id="main">
+
+					<div id="sidebar">
+		    			<img src="soccerschedule.jpg" width="341" height=""/>			 
+					</div>
+
+					<h1>SOCCER NEWS</h1>
+						<div id="content">STALLIONS SOCCER COME UP SHORT IN HARD FOUGHT 2-1 LOSS<br></div>
+						<br><center><img src="storyimage.jpg" width="" height=""></center>
+						<div id="info"><p><br>The NAU Stallions Soccer team faced off against the Houston Dutch Lions, a semi-pro team in Conroe, in a friendly competition. Coach Rios brought out some of his prospects and newly signed players to see their potential in teamwork with current players. First half got to a slow start with a goal from the Dutch in the 15th minute of the game, but answered with a nice goal from Sherrif Umar in the 30th minute of the first half. <br><br>Second half was a back and forth battle but the Dutch found a weak spot and scored on the Stallions in the 53rd minute of the game. From there the Stallions tried hard to go for the tie but time was not on their side. Final score was 2-1 with the Houston Dutch winning. Coach Rios saw a lot of promise by some of his recruits and hopes to see more in future matches
+                        </p></div>
+						 <br><img src="soccerroster.jpg" height="" width="">
+
+						<div><a href="http://www.na.edu/" target=_blank><img id="visit" src="visit.jpg"></a></div>
+				</div>
+
+				
+				<div id="footer">
+					<!-- division for the bottom footer-->
+					<div>
+						
+								<img id="nike" src="nike.png" width="220">
+								<img id="nau"  src="nau.png" width="160">
+								<img id="adidas" src="adidas.png" width="250">
+							
+					</div>
+				</div>
+				<div id="below_footer">
+					<!-- division for the bottom below the footer-->
+					<div id="copy"> <center>Copyright 2015| All Rights Reserved | North American University </center></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

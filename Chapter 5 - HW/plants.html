@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Tinley Xeriscapes</title>
+   <link rel="stylesheet" media="screen and (max-device-width: 999px)" href="tinleyhand.css" />
+   <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="tinley.css" />
+
+   <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+   <script>
+   var blanket = "images/blanket.jpg";
+   var bluestem = "images/bluestem.jpg";
+   var rugosa = "images/rugosa.jpg";
+   var sample = "images/img.jpg";
+
+
+
+   function changeColor(color1, color2, color3){
+      document.getElementById('plantImg').src = sample;
+      document.getElementById('container').style.backgroundColor = color1;
+      document.getElementById('aside').style.backgroundColor = color1;
+      document.getElementById('header').style.backgroundColor = color2;
+      document.getElementById('footer').style.backgroundColor = color2;
+      document.body.style.backgroundColor=color3;
+   }
+   </script>
+
+
+</head>
+
+<body>
+
+   <button style="background-color:red" onmousemove="changeColor('#cd5c5c','red', '#cd5b45')"></button>
+   <button style="background-color:blue" onmousemove="changeColor('#66CCFF', 'blue','#6495ed')"></button>
+   <button style="background-color:green" onmousemove="changeColor('#00E600', 'green', '#B8E6B8')"></button>
+   <button style="background-color:yellow" onmousemove="changeColor('#FFFF99', 'yellow', '#D6D675')"></button>
+   <button style="background-color:pink" onmousemove="changeColor('#d71868', 'pink', '#ff69b4')"></button>
+
+
+   <div id="container">
+
+      <header id = 'header'>
+
+	  </header>
+
+
+      <aside id = 'aside'>
+         <ul>
+            <li onmouseover="document.getElementById('plantImg').src = blanket"
+               onmouseout = "document.getElementById('plantImg').src = flower">Blanket Flower</li>
+            <li onmouseover="document.getElementById('plantImg').src = rugosa"
+               onmouseout = "document.getElementById('plantImg').src = flower">Hedge Rose</li>
+            <li onmouseover="document.getElementById('plantImg').src = bluestem"
+               onmouseout = "document.getElementById('plantImg').src = flower">Little Bluestem</li>
+         </ul>
+      </aside>
+
+      <article>
+         <figure >
+            <img src="images/img.jpg" width="640" height="400" alt="" title="" id="plantImg" />
+            <figcaption>
+
+            </figcaption>
+         </figure>
+      </article>
+
+      <footer id = 'footer'>
+         <p>Tinley Xeriscapes &bull; Tinley Park, IL 60477</p>
+      </footer>
+   </div>
+   <script src="plants.js"></script>
+</body>
+</html>

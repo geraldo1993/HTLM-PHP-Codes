@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <title>Chinese Zodiac Feedback form</title>
+</head>
+<!-- Project 8-2.-->
+<body>
+<h1>Feedback form</h1>
+<p>You can leave your feedback here.</p>
+<p>Please specify your name, message, and if your message should be published or not.</p>
+<p>Public feedback can be seen <a href="view_zodiac_feedback.php">here</a>.</p>
+<div class='profile'>
+<form action="process_zodiac_feedback.php" method="POST">
+<label>Name:</label> 
+<input type="text" name="sender" class="text_field" />
+<br />
+<label>Message:</label>
+<textarea rows='5' cols='40' name='message'>
+</textarea>
+<br />
+<label>Public message:</label>
+<select name="is_public">
+<option value='Y'>Yes</option>
+<option value='N'>No</option>
+</select>
+<br />
+<button class="nav_button" type="submit">Submit</button>
+</form>
+</div>
+</body> 
+</html> 
