@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GERALDO BRAHO</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+ </head>
+<link rel="stylesheet" href="home.css">
+ <body background="dna.jpg">
+ <marquee behavior="slide-repeat"><font color="white"><h3>Bioinformatics is the application of computer technology to the
+			management of biological information. 
+			Computers are used to gather, store, analyze and integrate biological and genetic information which can 
+			then be applied to gene-based drug discovery and development. The need for Bioinformatics capabilities has been precipitated by the 
+			explosion of publicly available genomic information resulting from the Human Genome Project.</marquee></font>
+ <img src="Logo.png">
+		
+ 
+		<div id="sub-container"> 
+		<div id='cssmenu'>
+    <ul>
+        <li class='active'><a href='HOME.html'>HOME</a></li>
+		<li><a href='Contact.html'>Contact</a></li>
+	</ul>
+ </div>	<!-- the box where the menu is kept-->
+ <img src="dna.jpg" name="slide" width="1024"height="350">
+ <a href="start.html"><img src="start.png"></a>
+			
+<script type="text/javascript">
+
+                var image1=new Image()
+                image1.src="dna.jpg"
+                var image2=new Image()
+                image2.src="dna3.jpg"
+                var image3=new Image()
+                image3.src="dna4.jpg"
+				var image4=new Image()
+                image4.src="dna5.jpg"
+                var image5=new Image()
+                image5.src="dna6.jpg"
+                var image6=new Image()
+				image6.src="dna2.jpg"
+				
+
+var step=1
+function slideit(){
+document.images.slide.src=eval("image"+ step +".src")
+if(step<6)	
+step++
+else
+step=1
+setTimeout("slideit()",4500)
+				}
+slideit()
+</script>
+
+</body>
+</html>
